@@ -24,6 +24,7 @@
   --modal-comment-placeholder: rgba(117, 117, 117, 0.5);
   --modal-policy-link: #2196f3;
   --modal-button-submit-color: #ffffff;
+  --hover-button-color:#188CE8;
 }
 
 li {
@@ -223,7 +224,7 @@ body {
     url('../images/background.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-color: var(--header-bgc-color);
 }
 
@@ -257,6 +258,11 @@ body {
   border-style: none;
   cursor: pointer;
   border-radius: 4px;
+}
+.main-button :focus,
+.main-button :hover{
+  color: var(--primary-white-color);
+  background-color: var(--hover-button-color);
 }
 .backdrop {
   position: fixed;
@@ -552,7 +558,7 @@ color: var(--modal-comment-placeholder);
 .team-icon-link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 /*---------------------------Наши партнеры */
 
@@ -565,7 +571,7 @@ color: var(--modal-comment-placeholder);
 .client-link:hover,
 .client-link:focus {
   color: var(--accent-color);
-  border-color: var(--accent-color);
+  border-color:  1 solid var(--accent-color);
 }
 .client-link {
   display: flex;
