@@ -571,7 +571,7 @@ color: var(--modal-comment-placeholder);
 .client-link:hover,
 .client-link:focus {
   color: var(--accent-color);
-  border-color:  1 solid var(--accent-color);
+  border-color:  1px solid var(--accent-color);
 }
 .client-link {
   display: flex;
@@ -584,7 +584,7 @@ color: var(--modal-comment-placeholder);
   border: 1px solid var(--client-border-color);
   border-radius: 4px;
 
-  transition: color 20ms var(--timing-function), border-color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
 }
 .logo-client {
   width: 106px;
